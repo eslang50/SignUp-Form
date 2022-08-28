@@ -1,0 +1,15 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.left-container {
+  background-image: url('./images/pool.jpeg');
+  width: 30%;
+  height: 100vh;
+}
+
+.form-container {
+  background-color:beige;
+  
+}
