@@ -6,57 +6,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up!</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="signUp.js" defer></script>
 </head>
 <body>
   
   <div class="flex-container">
     <div class="left-container">
       <div class="logo">
-        <!-- <img src="./images/swim-logo.jpg" width="50" alt=""> -->
+        <img src="./images/logo.png" alt="">
         <p id="logo">ESLANG</p>
       </div>
+      <p>Photo by Lefteris kallergis on Unsplash</p>
     </div>  
     <div class="form-container">
       <div class="header">
         <h1>Swim anywhere, anytime with Eslang. Sign up <i>now</i> to get started.</h1>
       </div>
-      <form action="" method="post">
-        <h3>Let's Dive In!</h3>
-        <div class="input-container">
-          <div>
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" name="first-name">
+      <form action="#" method="get">
+        <div class="mid">
+          <h3>Let's Dive In!</h3>
+          <div class="input-container">
+            <div>
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" name="first-name">
+            </div>
+            <div>
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" name="last-name">
+            </div>
           </div>
-          <div>
-            <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" name="last-name">
+          <div class="input-container">
+            <div>
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email">
+              <div id="email-error" class="error"></div>
+            </div>
+            <div>
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{9}">
+              <div id="phone-error" class="error"></div> 
+            </div>
+          </div>
+          <div class="input-container">
+            <div>
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password" name="password">
+            </div>
+            <div>
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input type="password" id="confirm-password" name="confirm-password">
+              <div id="password-error" class="error"></div>
+            </div>
           </div>
         </div>
-        <div class="input-container">
-          <div>
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email">
-          </div>
-          <div>
-            <label for="phone-number">PHONE NUMBER</label>
-            <input type="number" id="phone-number" name="phone-number">
-          </div>
-        </div>
-        <div class="input-container">
-          <div> 
-            <label for="password">PASSWORD</label>
-            <input type="password" id="password" name="password">
-          </div>
-          <div>
-            <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input type="password" id="confirm-password" name="confirm-password">
-          </div>
+        <div class="bot">
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="">Log in</a></p>
         </div>
       </form>
-      <div class="bot">
-        <button>Create Account</button>
-        <p>Already have an account? <a href="">Log in</a></p>
-      </div>
     </div>
   </div>
 </body>

@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
+  height: 100vh;
 }
 
 @font-face {
@@ -15,32 +17,39 @@ body {
 }
 
 .left-container {
-  background-image: url('./images/pool.jpeg');
+  background-image: url('./images/pool.jpg');
+  background-size: cover;
   width: 30%;
   height: 100vh;
+  position: relative;
   
 }
 
+.left-container > p:nth-child(2) {
+  position: absolute;
+  bottom: 0px;
+  left: 23%;
+}
 .form-container {
   background-color:beige;
   height: 100vh;
-  width: 50%;
-  
+  width: 50%
   
 }
 
 form {
   background-color: white;
-  padding: 20px 30px;
-  box-shadow: 0 8px 6px -6px gray;
+  margin-bottom: 20%;
 }
 
-#logo {
+.logo {
   font-size: 3em;
   color: white; 
   display: flex;
   justify-content: center;
-  padding: 0.4em 0;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 100px;
   background-color: black;
   background: rgba(0, 0, 0, 0.6)
   
@@ -51,7 +60,16 @@ form {
 }
 
 .bot {
-  margin-bottom: 20%;
+  background-color: beige;
+}
+
+.mid {
+  box-shadow: 0 8px 5px -5px gray;
+  padding-bottom: 40px;
+  margin: 0;
+  padding-left: 40px;
+  padding-top: 20px;
+  position: relative;
 }
 
 button {
@@ -72,8 +90,8 @@ button:hover {
 }
 
 .bot {
-  padding-left: 40px;
   padding-top: 40px;
+  padding-left: 40px;
 }
 
 label, input {
@@ -89,31 +107,13 @@ input {
   color: black;
 }
 
+input:invalid {
+  border-color: red;
+}
+
 label {
   font-family: 'ubuntu';
   letter-spacing: .1em;
-}
-
-h1, h2, p, h3 {
-  font-family: 'ubuntu';
-}
-
-h3 {
-  margin: 0;
-  padding-bottom: 20px;
-}
-
-p {
-  font-weight: bold;
-}
-
-h1 {
-  padding: 0px 40px;
-}
-
-a {
-  text-decoration: none;
-  color: rgb(11, 72, 163);
 }
 
 .input-container {
@@ -129,9 +129,52 @@ a {
 @media only screen and (max-width: 1200px) {
   .input-container {
     display: block;
-    
+    margin-left: auto;
+  }
+
+  .logo {
+    flex-wrap: wrap;
+    padding-top: 50px;
   }
 }
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+h1, h2, p, h3 {
+  font-family: 'ubuntu';
+}
+
+h3 {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+p {
+  font-weight: 450;
+  letter-spacing: .05em;
+}
+
+h1 {
+  padding: 0px 40px;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(11, 72, 163);
+}
+
+.error {
+  color: red;
+  max-width: 250px;
+}
+
+
+
 
 
 
