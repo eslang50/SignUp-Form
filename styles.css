@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: rgb(58, 56, 56);
   height: 100vh;
 }
 
@@ -9,7 +9,6 @@ body {
   font-family: 'ubuntu';
   src: url('https://fonts.google.com/specimen/Ubuntu');
 }
-
 
 .flex-container {
   display: flex;
